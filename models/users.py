@@ -1,5 +1,5 @@
 from models.database import db
-from utils.encoder import encode
+from utils.encoder import encodePassword
 
 
 class User(db.Model):
@@ -9,7 +9,7 @@ class User(db.Model):
 
     def __init__(self, username, password):
         self.username = username
-        self.password = encode(password)
+        self.password = encodePassword(password)
 
     def __repr__(self):
         return '<User %r>' % self.username

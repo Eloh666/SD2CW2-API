@@ -1,4 +1,4 @@
-from authentication.authenticateUser import authenticate, identity
+from authentication.authenticateUser import authenticate
 from controllers import bookingController
 from flask import Flask
 from flask_jwt import JWT
@@ -28,7 +28,7 @@ if not User.query.filter_by(username='Eloh666').first():
 
 # Initialises secury Settings
 app.config['SECRET_KEY'] = 'super-secret'
-jwt = JWT(app, authenticate, identity)
+jwt = JWT(app, authenticate)
 
 
 

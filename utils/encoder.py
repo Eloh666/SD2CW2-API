@@ -1,7 +1,6 @@
-import bcrypt
+import hashlib
 
-
-def encode(password):
-    salt = bcrypt.gensalt()
-    combo_password = password.encode('utf-8') + 'NapierHoldays'.encode('utf-8')
-    return bcrypt.hashpw(combo_password, salt)
+def encodePassword(password):
+    salt = "mySuperSecretSalt".encode('utf-8')
+    combo_password = password.encode('utf-8') + 'NapierHoldays'.encode('utf-8') + salt
+    return hashlib.md5(combo_password).hexdigest()
