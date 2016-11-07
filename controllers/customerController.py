@@ -1,27 +1,26 @@
-from datetime import datetime
 from flask_jwt import jwt_required
 from flask_restful import Resource
 from flask import request
 
-from models.bookings import Booking
+from models.customers import Customer
 from models.databaseInit import db
 
 
-class BookingController(Resource):
+class CustomerController(Resource):
     # decorators = [jwt_required()]
 
     def get(self):
-        bookings = Booking.query.all()
-        print(bookings)
+        customers = Customer.query.all()
         return {"response": "Getting the booking"}
 
     def post(self):
         body = request.get_json()
-        arrival = datetime.strptime(body.get('arrival'), '%Y-%m-%d')
-        departure = datetime.strptime(body.get('departure'), '%Y-%m-%d')
-        customerId = body.get('customerId')
-        if customerId:
-            db.session.add(Booking(arrival, departure, customerId))
+        print(body)
+        referenceNumber = body.get("referenceNumber")
+        name = body.get("name")
+        address = body.get("address")
+        if referenceNumber and name and address:
+            db.session.add(Customer(referenceNumber, name, address))
             db.session.commit()
             return {"response": {"ok": True}}
         return {"response": {"ok": False, "Error": "Something went wrong with sending the data"}}
