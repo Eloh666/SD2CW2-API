@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7acc7ce-d702-4948-b9cb-14a310fc1255" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/db/test.db" afterPath="$PROJECT_DIR$/static/db/test.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/bookingController.py" afterPath="$PROJECT_DIR$/controllers/bookingController.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/customerController.py" afterPath="$PROJECT_DIR$/controllers/customerController.py" />
     </list>
@@ -17,7 +19,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CW2API$dropAll.coverage" NAME="dropAll Coverage Results" MODIFIED="1478543824336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CW2API$CW2API.coverage" NAME="CW2API Coverage Results" MODIFIED="1479133041370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/CW2API$CW2API.coverage" NAME="CW2API Coverage Results" MODIFIED="1479158922031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/CW2API$createAll.coverage" NAME="createAll Coverage Results" MODIFIED="1478543830176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -42,7 +44,7 @@
     <favorites_list name="CW2API" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5842246">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
@@ -79,23 +81,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="bookingController.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="bookingController.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controllers/bookingController.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+                <state relative-caret-position="527">
+                  <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
+                    <marker date="1479158688136" expanded="true" signature="2031:2266" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="customerController.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="customerController.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controllers/customerController.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+                <state relative-caret-position="576">
+                  <caret line="46" column="73" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
                   <folding>
                     <element signature="e#0#34#0" expanded="true" />
                   </folding>
@@ -106,23 +109,15 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="bookings.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/models/bookings.py">
+        <leaf>
+          <file leaf-file-name="bookingController.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/controllers/bookingController.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="customers.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/models/customers.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="578">
+                  <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#0#29#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -161,8 +156,8 @@
         <option value="$PROJECT_DIR$/models/customers.py" />
         <option value="$PROJECT_DIR$/authentication/authenticateUser.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/flask_jwt/__init__.py" />
-        <option value="$PROJECT_DIR$/controllers/customerController.py" />
         <option value="$PROJECT_DIR$/controllers/bookingController.py" />
+        <option value="$PROJECT_DIR$/controllers/customerController.py" />
       </list>
     </option>
   </component>
@@ -173,7 +168,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1713" />
+    <option name="x" value="-7" />
     <option name="width" value="1734" />
     <option name="height" value="1407" />
   </component>
@@ -617,7 +612,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1713" y="0" width="1734" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1734" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12922002" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -958,16 +953,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/bookings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="24" />
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/customerController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="576">
+          <caret line="46" column="73" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
@@ -976,8 +972,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/bookingController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        <state relative-caret-position="578">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
