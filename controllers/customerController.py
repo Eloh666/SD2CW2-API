@@ -11,7 +11,15 @@ class CustomerController(Resource):
 
     def get(self):
         customers = Customer.query.all()
-        return {"response": "Getting the booking"}
+        query = []
+        for i in customers:
+            myDict = {
+                'referenceNumber': i.referenceNumber,
+                'name': i.name,
+                'address': i.address
+            }
+            query.append(myDict)
+        return query
 
     def post(self):
         body = request.get_json()

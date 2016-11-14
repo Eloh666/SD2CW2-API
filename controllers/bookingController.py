@@ -12,8 +12,16 @@ class BookingController(Resource):
 
     def get(self):
         bookings = Booking.query.all()
-        print(bookings)
-        return {"response": "Getting the booking"}
+        query = []
+        for i in bookings:
+            myDict = {
+                'id': i.id,
+                'arrivalDate': str(i.arrivalDate),
+                'departureDate': str(i.departureDate),
+                'customerId': i.customerId
+            }
+            query.append(myDict)
+        return query
 
     def post(self):
         body = request.get_json()
