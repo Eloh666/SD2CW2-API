@@ -14,9 +14,9 @@ class CustomerController(Resource):
         query = []
         for i in customers:
             myDict = {
-                'referenceNumber': i.referenceNumber,
-                'name': i.name,
-                'address': i.address
+                'ReferenceNumber': i.referenceNumber,
+                'Name': i.name,
+                'Address': i.address
             }
             query.append(myDict)
         return query

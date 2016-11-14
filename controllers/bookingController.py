@@ -15,10 +15,10 @@ class BookingController(Resource):
         query = []
         for i in bookings:
             myDict = {
-                'id': i.id,
-                'arrivalDate': str(i.arrivalDate),
-                'departureDate': str(i.departureDate),
-                'customerId': i.customerId
+                'Id': i.id,
+                'ArrivalDate': str(i.arrivalDate),
+                'DepartureDate': str(i.departureDate),
+                'CustomerId': i.customerId
             }
             query.append(myDict)
         return query
