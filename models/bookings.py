@@ -6,11 +6,15 @@ class Booking(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     arrivalDate = db.Column(db.Date, nullable=False)
     departureDate = db.Column(db.Date, nullable=False)
+
+    dietaryReqs = db.Column(db.String, nullable=True)
+
     customerId = db.Column(db.Integer, db.ForeignKey('customers.referenceNumber'))
 
-    bookings = db.relationship("Guest")
+    guests = db.relationship("Guest")
+    extras = db.relationship("Extra")
 
-    def __init__(self, arrival, departure, customerId):
+    def __init__(self, arrival, departure, customerId, extras, guests):
         self.arrivalDate = arrival
         self.departureDate = departure
         self.customerId = customerId

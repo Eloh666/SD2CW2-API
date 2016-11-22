@@ -8,5 +8,11 @@
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/static/db\test.db</jdbc-url>
       <default-dialect>SQLite</default-dialect>
     </data-source>
+    <data-source source="LOCAL" name="Sqlite (Xerial) - bookingDatabase.db" uuid="43937454-bb86-4818-88a4-30a39bf49160">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/static/db/bookingDatabase.db</jdbc-url>
+    </data-source>
   </component>
 </project>

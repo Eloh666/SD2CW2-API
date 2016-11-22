@@ -16,22 +16,25 @@ class BookingController(Resource):
         query = []
         for i in bookings:
             myDict = {
-                'Id': i.id,
                 'ArrivalDate': str(i.arrivalDate),
                 'DepartureDate': str(i.departureDate),
-                'CustomerId': i.customerId
+                'CustomerId': i.customerId,
+                'DietaryReqs': i.dietaryReqs,
+                'Guests': i.guests,
+                'Extras': i.extras
             }
             query.append(myDict)
         return query
 
     def post(self):
         body = request.get_json()
-        print(body)
+        guests = body.get('guests')
+        extras = body.get('extras')
         arrival = datetime.strptime(body.get('arrivalDate'), '%Y-%m-%d')
         departure = datetime.strptime(body.get('departureDate'), '%Y-%m-%d')
         customerId = body.get('customerId')
         if customerId and Customer.query.filter_by(referenceNumber=customerId).first():
-            db.session.add(Booking(arrival, departure, customerId))
+            db.session.add(Booking(arrival, departure, customerId, guests, extras))
             db.session.commit()
             return {"response": {"ok": True}}
         return {"response": {"ok": False, "Error": "Something went wrong with sending the data"}}

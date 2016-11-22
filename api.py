@@ -15,7 +15,7 @@ app = Flask(__name__)
 app.config['DEBUG'] = True
 
 # Initialises DB
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///static/db/test.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///static/db/bookingDatabase.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 db.init_app(app)
@@ -27,6 +27,7 @@ with app.app_context():
     from models.customers import Customer
     from models.bookings import Booking
     from models.guest import Guest
+    from models.extras import Extra
 
     db.create_all()
 
