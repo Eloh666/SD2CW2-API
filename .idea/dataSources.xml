@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Sqlite (Xerial) - test.db" uuid="5b51518e-9c63-4e5b-9c67-e3d4e2b0b992">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/static/db\test.db</jdbc-url>
-      <default-dialect>SQLite</default-dialect>
-    </data-source>
     <data-source source="LOCAL" name="Sqlite (Xerial) - bookingDatabase.db" uuid="43937454-bb86-4818-88a4-30a39bf49160">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>

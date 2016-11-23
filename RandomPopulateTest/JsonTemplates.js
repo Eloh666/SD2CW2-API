@@ -4,9 +4,9 @@ booking1 = {
     "customerId": 1,
     "dietaryReqs": "Only monster Energy Drink",
     "guests": [
-        {"age": 56, "name": "Paul Atreides", "passport": "34G84H32NGK32J2"},
-        {"age": 41, "name": "Darth Vader", "passport": "435345S345FGHFS"},
-        {"age": 48, "name": "Emperor Palpatine", "passport": "3457H32NGK456J2"}
+        {"bookingId": "1", "age": 56, "name": "Paul Atreides", "passport": "34G84H32NGK32J2"},
+        {"bookingId": "1", "age": 41, "name": "Darth Vader", "passport": "435345S345FGHFS"},
+        {"bookingId": "1", "age": 48, "name": "Emperor Palpatine", "passport": "3457H32NGK456J2"}
     ],
     "extras": {"breakfast":true, "dinner":true, "carHire":null}
 }
@@ -17,8 +17,8 @@ booking2 = {
     "customerId": 3,
     "dietaryReqs": null,
     "guests": [
-        {"age": 21, "name": "Samael", "passport": "456FDG3453DFS65"},
-        {"age": 18, "name": "Baal", "passport": "8642NGHGFK456J2"}
+        {"bookingId": "2", "age": 21, "name": "Samael", "passport": "456FDG3453DFS65"},
+        {"bookingId": "2", "age": 18, "name": "Baal", "passport": "8642NGHGFK456J2"}
     ],
     "extras": {"breakfast":true, "dinner":true, "carHire":{
         "hireStart": "2015-04-11",

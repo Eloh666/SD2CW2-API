@@ -14,7 +14,7 @@ class Booking(db.Model):
     guests = db.relationship("Guest")
     extras = db.relationship("Extra")
 
-    def __init__(self, arrival, departure, customerId, extras, guests):
+    def __init__(self, arrival, departure, customerId):
         self.arrivalDate = arrival
         self.departureDate = departure
         self.customerId = customerId

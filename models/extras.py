@@ -1,21 +1,20 @@
 from models.databaseInit import db
 
-
 class Extra(db.Model):
     __tablename__ = 'extras'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     type = db.Column(db.String, nullable=False)
-    arrivalDate = db.Column(db.Date, nullable=False)
-    departureDate = db.Column(db.Date, nullable=False)
+    hireStart = db.Column(db.Date, nullable=True)
+    hireEnd = db.Column(db.Date, nullable=True)
 
     bookingId = db.Column(db.Integer, db.ForeignKey('bookings.id'))
 
-    def __init__(self, name, address, age, passportNumber):
-        self.name = name
-        self.address = address
-        self.age = age
-        self.passportNumber = passportNumber
+    def __init__(self, extraType, bookingId, hireStart=None, hireEnd=None):
+        self.type = extraType
+        self.hireStart = hireStart
+        self.hireEnd = hireEnd
+        self.bookingId = bookingId
 
     def __repr__(self):
-        return '<Guest Name N: %r>' % self.name
+        return '<Guest Name N: %r>' % self.type
 
