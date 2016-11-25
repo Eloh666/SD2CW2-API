@@ -30,7 +30,7 @@ class CustomerController(Resource):
         if referenceNumber and name and address:
             db.session.add(Customer(referenceNumber, name, address))
             db.session.commit()
-            return {"response": {"ok": True}}
+            return {"response": {"ok": True, "id": referenceNumber}}
         return {"response": {"ok": False, "Error": "Something went wrong with sending the data"}}
 
     def put(self):

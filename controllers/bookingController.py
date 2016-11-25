@@ -24,7 +24,10 @@ class BookingController(Resource):
             guests = [alc2json(guest) for guest in i.guests]
             extras = {}
             for k in [alc2json(extra) for extra in i.extras]:
-                extras[k['type']] = k if k['type'] == 'carHire' else True
+                if not k['type'] == 'carHire':
+                    del k['hireStart']
+                    del k['hireEnd']
+                extras[k['type']] = k
             myDict = {
                 'Id': str(i.id),
                 'ArrivalDate': str(i.arrivalDate),
@@ -50,7 +53,7 @@ class BookingController(Resource):
             db.session.bulk_save_objects(addAllGuestsByBookingId(body.get('guests'), newBooking.id))
             db.session.bulk_save_objects(addAllExtrasByBookingId(extras, newBooking.id))
             db.session.commit()
-            return {"response": {"ok": True}}
+            return {"response": {"ok": True, "id": newBooking.id}}
         return {"response": {"ok": False, "Error": "Customer not found"}}
 
     def put(self):
