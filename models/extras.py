@@ -1,4 +1,26 @@
 from models.databaseInit import db
+from datetime import datetime
+
+
+def addAllExtrasByBookingId(extras, bookingId):
+    extrasList = []
+    for key, value in extras.items():
+        if value:
+            if key == 'carHire':
+                extrasList.append(Extra(
+                    key,
+                    bookingId,
+                    datetime.strptime(value['hireStart'], '%Y-%m-%d'),
+                    datetime.strptime(value['hireEnd'], '%Y-%m-%d')))
+            else:
+                extrasList.append(Extra(key, bookingId))
+    return extrasList
+
+
+def deleteAllExtrasByBookingId(bookingId):
+    Extra.query.filter_by(bookingId=bookingId).delete()
+    db.session.commit()
+
 
 class Extra(db.Model):
     __tablename__ = 'extras'

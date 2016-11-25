@@ -1,6 +1,22 @@
 from models.databaseInit import db
 
 
+def addAllGuestsByBookingId(guests, bookingId):
+    guestsList = []
+    for guest in guests:
+        guestsList.append(Guest(
+            guest['name'],
+            guest['age'],
+            guest['passport'],
+            bookingId))
+    return guestsList
+
+
+def deleteAllGuestsByBookingId(bookingId):
+    Guest.query.filter_by(bookingId=bookingId).delete()
+    db.session.commit()
+
+
 class Guest(db.Model):
     __tablename__ = 'guests'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
@@ -18,4 +34,3 @@ class Guest(db.Model):
 
     def __repr__(self):
         return '<Guest Name N: %r>' % self.name
-
