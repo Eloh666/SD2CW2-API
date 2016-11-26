@@ -30,22 +30,18 @@ customers = [
     {
         "Address": "Some other very serious address",
         "Name": "Davide Morello2",
-        "ReferenceNumber": 1
     },
     {
         "Address": "Yavin VI",
         "Name": "Luke Skywalker",
-        "ReferenceNumber": 2
     },
     {
         "Address": "Japan",
         "Name": "Saitama",
-        "ReferenceNumber": 3
     },
     {
         "Address": "London",
         "Name": "Alucard",
-        "ReferenceNumber": 4
     },
     {
         "Address": "Skellige",

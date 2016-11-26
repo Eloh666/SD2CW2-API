@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7acc7ce-d702-4948-b9cb-14a310fc1255" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandomPopulateTest/JsonTemplates.js" afterPath="$PROJECT_DIR$/RandomPopulateTest/JsonTemplates.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/bookingController.py" afterPath="$PROJECT_DIR$/controllers/bookingController.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/customerController.py" afterPath="$PROJECT_DIR$/controllers/customerController.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/bookings.py" afterPath="$PROJECT_DIR$/models/bookings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/customers.py" afterPath="$PROJECT_DIR$/models/customers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/db/bookingDatabase.db" afterPath="$PROJECT_DIR$/static/db/bookingDatabase.db" />
     </list>
     <ignored path="CW2API.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +23,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CW2API$dropAll.coverage" NAME="dropAll Coverage Results" MODIFIED="1478543824336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CW2API$createAll.coverage" NAME="createAll Coverage Results" MODIFIED="1478543830176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CW2API$CW2API.coverage" NAME="CW2API Coverage Results" MODIFIED="1480115881080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/CW2API$CW2API.coverage" NAME="CW2API Coverage Results" MODIFIED="1480188706547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -38,11 +44,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5023256">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="bookingController.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="bookingController.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controllers/bookingController.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="309">
-                  <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+                <state relative-caret-position="289">
+                  <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
                   </folding>
@@ -70,12 +76,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="customerController.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="customerController.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controllers/customerController.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="663">
-                  <caret line="45" column="43" lean-forward="false" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
-                  <folding />
+                <state relative-caret-position="102">
+                  <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#34#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -83,8 +91,8 @@
           <file leaf-file-name="customers.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models/customers.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                <state relative-caret-position="221">
+                  <caret line="13" column="81" lean-forward="false" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
                   <folding />
                 </state>
               </provider>
@@ -107,8 +115,8 @@
           <file leaf-file-name="customers.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models/customers.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                <state relative-caret-position="51">
+                  <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -127,8 +135,8 @@
           <file leaf-file-name="JsonTemplates.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/RandomPopulateTest/JsonTemplates.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="16" />
+                <state relative-caret-position="221">
+                  <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -137,24 +145,24 @@
           <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
             <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/43937454-bb86-4818-88a4-30a39bf49160/console.sql">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+                <state relative-caret-position="51">
+                  <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="bookings.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="bookings.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/models/bookings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="29" />
+                <state relative-caret-position="442">
+                  <caret line="26" column="68" lean-forward="true" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="extras.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="extras.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models/extras.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="221">
@@ -198,15 +206,15 @@
         <option value="$PROJECT_DIR$/authentication/authenticateUser.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/flask_jwt/__init__.py" />
         <option value="$PROJECT_DIR$/stuff.xml" />
-        <option value="$PROJECT_DIR$/models/customers.py" />
-        <option value="$PROJECT_DIR$/RandomPopulateTest/JsonTemplates.js" />
-        <option value="$PROJECT_DIR$/models/bookings.py" />
         <option value="$PROJECT_DIR$/models/guest.py" />
         <option value="$PROJECT_DIR$/models/extras.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/43937454-bb86-4818-88a4-30a39bf49160/console.sql" />
-        <option value="$PROJECT_DIR$/controllers/customerController.py" />
         <option value="$PROJECT_DIR$/api.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/43937454-bb86-4818-88a4-30a39bf49160/console.sql" />
+        <option value="$PROJECT_DIR$/RandomPopulateTest/JsonTemplates.js" />
+        <option value="$PROJECT_DIR$/models/customers.py" />
+        <option value="$PROJECT_DIR$/models/bookings.py" />
         <option value="$PROJECT_DIR$/controllers/bookingController.py" />
+        <option value="$PROJECT_DIR$/controllers/customerController.py" />
       </list>
     </option>
   </component>
@@ -217,10 +225,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="3456" />
-    <option name="height" value="1416" />
+    <option name="x" value="468" />
+    <option name="y" value="215" />
+    <option name="width" value="1929" />
+    <option name="height" value="1173" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -237,8 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -337,6 +343,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -658,14 +666,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
+    <frame x="468" y="215" width="1929" height="1173" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34982333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35341153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3219018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3221154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -705,7 +713,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="30" column="68" lean-forward="false" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
-          <folding />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -755,7 +765,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -802,7 +814,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -985,46 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/bookings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandomPopulateTest/JsonTemplates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/43937454-bb86-4818-88a4-30a39bf49160/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/customers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/customerController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="45" column="43" lean-forward="false" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -1051,12 +1025,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/43937454-bb86-4818-88a4-30a39bf49160/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandomPopulateTest/JsonTemplates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/bookings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="68" lean-forward="true" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/bookingController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/customers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="81" lean-forward="false" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/customerController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -3,7 +3,7 @@ from flask_jwt import jwt_required
 from flask_restful import Resource
 from flask import request
 
-from models.bookings import Booking
+from models.bookings import Booking, serializeBooking
 from models.customers import Customer
 from models.guest import addAllGuestsByBookingId, deleteAllGuestsByBookingId
 from models.extras import addAllExtrasByBookingId, deleteAllExtrasByBookingId
@@ -11,31 +11,16 @@ from models.databaseInit import db
 
 
 
-def alc2json(row):
-    return dict([(col, str(getattr(row,col))) for col in row.__table__.columns.keys()])
+
 
 class BookingController(Resource):
-    # decorators = [jwt_required()]
+    decorators = [jwt_required()]
 
     def get(self):
         bookings = Booking.query.all()
         query = []
-        for i in bookings:
-            guests = [alc2json(guest) for guest in i.guests]
-            myDict = {
-                'Id': str(i.id),
-                'ArrivalDate': str(i.arrivalDate),
-                'DepartureDate': str(i.departureDate),
-                'CustomerId': i.customerId,
-                'DietaryReqs': i.dietaryReqs,
-                'Guests': guests,
-            }
-            for k in [alc2json(extra) for extra in i.extras]:
-                if not k['type'] == 'carHire':
-                    del k['hireStart']
-                    del k['hireEnd']
-                myDict[k['type']] = k
-            query.append(myDict)
+        for booking in bookings:
+            query.append(serializeBooking(booking))
         return query
 
     def post(self):
@@ -51,7 +36,7 @@ class BookingController(Resource):
             db.session.bulk_save_objects(addAllGuestsByBookingId(body.get('guests'), newBooking.id))
             db.session.bulk_save_objects(addAllExtrasByBookingId(extras, newBooking.id))
             db.session.commit()
-            return {"response": {"ok": True, "id": newBooking.id}}
+            return serializeBooking(newBooking)
         return {"response": {"ok": False, "Error": "Customer not found"}}
 
     def put(self):
@@ -73,7 +58,7 @@ class BookingController(Resource):
             db.session.bulk_save_objects(addAllGuestsByBookingId(body.get('guests'), booking.id))
             db.session.bulk_save_objects(addAllExtrasByBookingId(body.get('extras'), booking.id))
             db.session.commit()
-            return {"response": {"ok": True}}
+            return serializeBooking(booking)
         return {"response": {"ok": False, "Error": "Something went wrong with sending the data"}}
 
     def delete(self):

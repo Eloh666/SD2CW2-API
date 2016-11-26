@@ -1,6 +1,27 @@
 from models.databaseInit import db
 
 
+def alc2json(row):
+    return dict([(col, str(getattr(row,col))) for col in row.__table__.columns.keys()])
+
+
+def serializeBooking(booking):
+    guests = [alc2json(guest) for guest in booking.guests]
+    myDict = {
+        'Id': str(booking.id),
+        'ArrivalDate': str(booking.arrivalDate),
+        'DepartureDate': str(booking.departureDate),
+        'CustomerId': booking.customerId,
+        'DietaryReqs': booking.dietaryReqs,
+        'Guests': guests,
+    }
+    for k in [alc2json(extra) for extra in booking.extras]:
+        if not k['type'] == 'carHire':
+            del k['hireStart']
+            del k['hireEnd']
+        myDict[k['type']] = k
+    return myDict
+
 class Booking(db.Model):
     __tablename__ = 'bookings'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)

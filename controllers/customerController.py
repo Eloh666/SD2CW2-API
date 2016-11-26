@@ -3,39 +3,34 @@ from flask_restful import Resource
 from flask import request
 
 from models.bookings import Booking
-from models.customers import Customer
+from models.customers import Customer, serializeCustomer
 from models.databaseInit import db
 
 
 class CustomerController(Resource):
-    # decorators = [jwt_required()]
+    decorators = [jwt_required()]
 
     def get(self):
         customers = Customer.query.all()
         query = []
-        for i in customers:
-            myDict = {
-                'ReferenceNumber': i.referenceNumber,
-                'Name': i.name,
-                'Address': i.address
-            }
-            query.append(myDict)
+        for customer in customers:
+            query.append(serializeCustomer(customer))
         return query
 
     def post(self):
         body = request.get_json()
-        referenceNumber = body.get("referenceNumber")
         name = body.get("name")
         address = body.get("address")
-        if referenceNumber and name and address:
-            db.session.add(Customer(referenceNumber, name, address))
+        if name and address:
+            newCustomer = Customer(name, address)
+            db.session.add(newCustomer)
             db.session.commit()
-            return {"response": {"ok": True, "id": referenceNumber}}
+            return serializeCustomer(newCustomer)
         return {"response": {"ok": False, "Error": "Something went wrong with sending the data"}}
 
     def put(self):
         body = request.get_json()
-        referenceNumber = body.get("referenceNumber")
+        referenceNumber = body.get("referencenumber")
         name = body.get("name")
         address = body.get("address")
         customer = Customer.query.filter_by(referenceNumber=referenceNumber).first()
@@ -43,7 +38,7 @@ class CustomerController(Resource):
             customer.name = name
             customer.address = address
             db.session.commit()
-            return {"response": {"ok": True}}
+            return serializeCustomer(customer)
         return {"response": {"ok": False, "Error": "Something went wrong with sending the data"}}
 
     def delete(self):
