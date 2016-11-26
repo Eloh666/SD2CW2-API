@@ -43,7 +43,7 @@ class CustomerController(Resource):
 
     def delete(self):
         body = request.get_json()
-        referenceNumber = body.get("referenceNumber")
+        referenceNumber = body.get("referencenumber")
         if not Booking.query.filter_by(customerId=referenceNumber).first():
             Customer.query.filter_by(referenceNumber=referenceNumber).delete()
             db.session.commit()

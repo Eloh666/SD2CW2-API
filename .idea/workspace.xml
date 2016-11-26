@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7acc7ce-d702-4948-b9cb-14a310fc1255" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandomPopulateTest/JsonTemplates.js" afterPath="$PROJECT_DIR$/RandomPopulateTest/JsonTemplates.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/bookingController.py" afterPath="$PROJECT_DIR$/controllers/bookingController.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/customerController.py" afterPath="$PROJECT_DIR$/controllers/customerController.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/bookings.py" afterPath="$PROJECT_DIR$/models/bookings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/customers.py" afterPath="$PROJECT_DIR$/models/customers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/db/bookingDatabase.db" afterPath="$PROJECT_DIR$/static/db/bookingDatabase.db" />
     </list>
     <ignored path="CW2API.iws" />
@@ -23,7 +18,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CW2API$dropAll.coverage" NAME="dropAll Coverage Results" MODIFIED="1478543824336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CW2API$createAll.coverage" NAME="createAll Coverage Results" MODIFIED="1478543830176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CW2API$CW2API.coverage" NAME="CW2API Coverage Results" MODIFIED="1480188706547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/CW2API$CW2API.coverage" NAME="CW2API Coverage Results" MODIFIED="1480200237154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -44,7 +39,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.5023256">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="bookingController.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="bookingController.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controllers/bookingController.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="289">
@@ -76,10 +71,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="customerController.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="customerController.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controllers/customerController.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
+                <state relative-caret-position="187">
                   <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#34#0" expanded="true" />
@@ -213,8 +208,8 @@
         <option value="$PROJECT_DIR$/RandomPopulateTest/JsonTemplates.js" />
         <option value="$PROJECT_DIR$/models/customers.py" />
         <option value="$PROJECT_DIR$/models/bookings.py" />
-        <option value="$PROJECT_DIR$/controllers/bookingController.py" />
         <option value="$PROJECT_DIR$/controllers/customerController.py" />
+        <option value="$PROJECT_DIR$/controllers/bookingController.py" />
       </list>
     </option>
   </component>
@@ -225,9 +220,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="468" />
-    <option name="y" value="215" />
-    <option name="width" value="1929" />
+    <option name="x" value="3464" />
+    <option name="width" value="1925" />
     <option name="height" value="1173" />
   </component>
   <component name="ProjectView">
@@ -666,7 +660,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="468" y="215" width="1929" height="1173" extended-state="0" />
+    <frame x="3464" y="0" width="1925" height="1173" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35341153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1049,16 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/bookingController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/customers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1069,10 +1053,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/customerController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/bookingController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
