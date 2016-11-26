@@ -22,12 +22,6 @@ class BookingController(Resource):
         query = []
         for i in bookings:
             guests = [alc2json(guest) for guest in i.guests]
-            extras = {}
-            for k in [alc2json(extra) for extra in i.extras]:
-                if not k['type'] == 'carHire':
-                    del k['hireStart']
-                    del k['hireEnd']
-                extras[k['type']] = k
             myDict = {
                 'Id': str(i.id),
                 'ArrivalDate': str(i.arrivalDate),
@@ -35,8 +29,12 @@ class BookingController(Resource):
                 'CustomerId': i.customerId,
                 'DietaryReqs': i.dietaryReqs,
                 'Guests': guests,
-                'Extras': extras
             }
+            for k in [alc2json(extra) for extra in i.extras]:
+                if not k['type'] == 'carHire':
+                    del k['hireStart']
+                    del k['hireEnd']
+                myDict[k['type']] = k
             query.append(myDict)
         return query
 
