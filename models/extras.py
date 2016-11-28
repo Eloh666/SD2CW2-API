@@ -5,7 +5,8 @@ from datetime import datetime
 def addAllExtrasByBookingId(extras, bookingId):
     extrasList = []
     for key, value in extras.items():
-        if value:
+        if value or value == {}:
+            print(key, "   ", value)
             if key == 'carHire':
                 extrasList.append(Extra(
                     key,

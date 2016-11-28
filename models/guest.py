@@ -7,7 +7,7 @@ def addAllGuestsByBookingId(guests, bookingId):
         guestsList.append(Guest(
             guest['name'],
             guest['age'],
-            guest['passport'],
+            guest['passportnumber'],
             bookingId))
     return guestsList
 

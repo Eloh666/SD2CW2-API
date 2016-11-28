@@ -26,7 +26,7 @@ class CustomerController(Resource):
             db.session.add(newCustomer)
             db.session.commit()
             return serializeCustomer(newCustomer)
-        return {"response": {"ok": False, "Error": "Something went wrong with sending the data"}}
+        return {"response": {"ok": False, "Error": "Something went wrong with sending the data"}}, 500
 
     def put(self):
         body = request.get_json()
@@ -39,7 +39,7 @@ class CustomerController(Resource):
             customer.address = address
             db.session.commit()
             return serializeCustomer(customer)
-        return {"response": {"ok": False, "Error": "Something went wrong with sending the data"}}
+        return {"response": {"ok": False, "Error": "Something went wrong with sending the data"}}, 500
 
     def delete(self):
         body = request.get_json()

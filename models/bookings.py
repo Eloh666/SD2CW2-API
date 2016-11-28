@@ -42,3 +42,5 @@ class Booking(db.Model):
 
     def __repr__(self):
         return '<Booking N: %r>' % self.id
+
+

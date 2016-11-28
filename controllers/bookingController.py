@@ -9,9 +9,9 @@ from models.guest import addAllGuestsByBookingId, deleteAllGuestsByBookingId
 from models.extras import addAllExtrasByBookingId, deleteAllExtrasByBookingId
 from models.databaseInit import db
 
-
-
-
+def removeUnconvertedData(date):
+    date = date.split("T")[0]
+    return date
 
 class BookingController(Resource):
     decorators = [jwt_required()]
@@ -26,9 +26,9 @@ class BookingController(Resource):
     def post(self):
         body = request.get_json()
         extras = dict(body.get('extras'))
-        arrival = datetime.strptime(body.get('arrivalDate'), '%Y-%m-%d')
-        departure = datetime.strptime(body.get('departureDate'), '%Y-%m-%d')
-        customerId = body.get('customerId')
+        arrival = datetime.strptime(removeUnconvertedData(body.get('arrivaldate')), '%Y-%m-%d')
+        departure = datetime.strptime(removeUnconvertedData(body.get('departuredate')), '%Y-%m-%d')
+        customerId = body.get('customerid')
         if customerId and Customer.query.filter_by(referenceNumber=customerId).first():
             newBooking = Booking(arrival, departure, customerId)
             db.session.add(newBooking)
@@ -37,15 +37,15 @@ class BookingController(Resource):
             db.session.bulk_save_objects(addAllExtrasByBookingId(extras, newBooking.id))
             db.session.commit()
             return serializeBooking(newBooking)
-        return {"response": {"ok": False, "Error": "Customer not found"}}
+        return {"response": {"ok": False, "Error": "Customer not found"}}, 500
 
     def put(self):
         body = request.get_json()
         bookingId = body.get('id')
-        arrival = datetime.strptime(body.get('arrivalDate'), '%Y-%m-%d')
-        departure = datetime.strptime(body.get('departureDate'), '%Y-%m-%d')
-        dietaryReqs = body.get('dietaryReqs')
-        customerId = body.get('customerId')
+        arrival = datetime.strptime(removeUnconvertedData(body.get('arrivaldate')), '%Y-%m-%d')
+        departure = datetime.strptime(removeUnconvertedData(body.get('departuredate')), '%Y-%m-%d')
+        dietaryReqs = body.get('dietaryreqs')
+        customerId = body.get('customerid')
         booking = Booking.query.filter_by(id=bookingId).first()
         if booking and Customer.query.filter_by(referenceNumber=customerId).first():
             booking.arrivalDate = arrival
@@ -59,7 +59,7 @@ class BookingController(Resource):
             db.session.bulk_save_objects(addAllExtrasByBookingId(body.get('extras'), booking.id))
             db.session.commit()
             return serializeBooking(booking)
-        return {"response": {"ok": False, "Error": "Something went wrong with sending the data"}}
+        return {"response": {"ok": False, "Error": "Something went wrong with sending the data"}}, 500
 
     def delete(self):
         body = request.get_json()
