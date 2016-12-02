@@ -1,6 +1,8 @@
+from datetime import timedelta
+
 from authentication.authenticateUser import authenticate, identity
 from flask import Flask
-from flask_jwt import JWT
+from flask_jwt import JWT, CONFIG_DEFAULTS
 from flask_restful import Api
 
 from models.databaseInit import db
@@ -38,10 +40,9 @@ if not User.query.filter_by(username='Eloh666').first():
     db.session.commit()
 
 # Initialises secury Settings
+CONFIG_DEFAULTS['JWT_EXPIRATION_DELTA'] = timedelta(days=1)
 app.config['SECRET_KEY'] = 'super-secret'
 jwt = JWT(app, authenticate, identity)
-
-
 
 # Setup app as restful API
 api = Api(app)
